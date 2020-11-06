@@ -7,4 +7,4 @@ def index():
         print(request.form['phrase'])
         #Request the ML app
         return redirect(url_for('index'))
-    return render_template('result.html')
+    return render_template('index.html')
