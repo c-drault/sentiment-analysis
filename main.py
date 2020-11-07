@@ -3,9 +3,8 @@ app = Flask(__name__)
 import sys
 import joblib
 
-
-model = joblib.load("saved_model")
-vectorizer = joblib.load("saved_vectorizer")
+model = joblib.load("project/saved_model")
+vectorizer = joblib.load("project/saved_vectorizer")
 
 def sentiment_analysis(sentence):
     X_new = vectorizer.transform(sentence)
@@ -35,4 +34,4 @@ def index():
 
 
 if __name__ == '__main__':
-     app.run(debug=True,host='127.0.0.1')
+     app.run(debug=True,host='0.0.0.0')
