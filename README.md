@@ -1,4 +1,4 @@
-# sentiment-analysis
+# Sentiment Analysis Project
 
 ## 📦 Install with Docker
 First pull the image : 
