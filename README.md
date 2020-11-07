@@ -1,17 +1,7 @@
 # sentiment-analysis
 
-
-Dev mod :
-- `install conda`
-- `conda install -c anaconda flask`
-- `export FLASK_APP="main.py"`
-- `flask run`
-
-
-windows : 
-- `conda install -c anaconda flask`
-- `python main.py`
-
-Docker image : 
-
-https://hub.docker.com/repository/docker/cdrault/flask-test/tags?page=1
+## 📦 Install with Docker
+`docker pull docker.pkg.github.com/c-drault/sentiment-analysis/sentiment-analysis:1.0`
+`docker run -p 5000:5000 docker.pkg.github.com/c-drault/sentiment-analysis/sentiment-analysis:1.0`
+Or add `-d` to launch in deamon
+`docker run -p 5000:5000 -d docker.pkg.github.com/c-drault/sentiment-analysis/sentiment-analysis:1.0`
