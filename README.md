@@ -10,4 +10,8 @@ Dev mod :
 
 windows : 
 - `conda install -c anaconda flask`
-- python main.py
+- `python main.py`
+
+Docker image : 
+
+https://hub.docker.com/repository/docker/cdrault/flask-test/tags?page=1
