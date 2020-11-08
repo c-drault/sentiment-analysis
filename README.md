@@ -2,7 +2,7 @@
 
 ## Install
 
-This project require Docker 🐳 to be install !
+This project require Docker 🐳 to be install ! You can find the image on GitHub Package or on DockerHub.
 
 ### Image from GitHub Package 📦
 First, you must generate a GitHub token (https://github.com/settings/tokens).
@@ -25,6 +25,8 @@ And then, run a container :
 docker run -p 5000:5000 -d docker.pkg.github.com/c-drault/sentiment-analysis/sentiment-analysis:1.0
 ```
 
+Access to `localhost:5000` on your browser.
+
 ### Image from DockerHub 🐳
 - First connect to DockerHub
 ```bash
@@ -42,3 +44,5 @@ And then, run a container :
 ```bash
 docker run -p 5000:5000 -d cdrault/sentiment-analysis:1.0
 ```
+
+Access to `localhost:5000` on your browser.
