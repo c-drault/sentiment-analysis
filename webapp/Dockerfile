@@ -1,10 +1,5 @@
 FROM python:3.6-slim
-
-WORKDIR /project
-ADD . project
-
-RUN  pip install -r project/requirements.txt
-
-ENV NAME World
-
-CMD ["python", "project/main.py"]
+COPY . /app
+WORKDIR /app
+RUN  pip install -r /app/requirements.txt && chmod a+x run.sh
+CMD ["./run.sh"]

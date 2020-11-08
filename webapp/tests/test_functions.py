@@ -1,5 +1,5 @@
 import pytest
-from webapp.main.app import sentiment_analysis
+from ..main.app import sentiment_analysis
 
 def toArray(string):
     sentence = []
