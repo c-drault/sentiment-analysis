@@ -3,8 +3,8 @@ app = Flask(__name__)
 import sys
 import joblib
 
-model = joblib.load("project/saved_model")
-vectorizer = joblib.load("project/saved_vectorizer")
+model = joblib.load("main/saved/saved_model")
+vectorizer = joblib.load("main/saved/saved_vectorizer")
 
 def sentiment_analysis(sentence):
     X_new = vectorizer.transform(sentence)
