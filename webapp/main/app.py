@@ -1,4 +1,4 @@
-from flask import *
+from flask import Flask, request, redirect, url_for, render_template
 app = Flask(__name__)
 import sys
 import joblib
@@ -34,4 +34,4 @@ def index():
 
 
 if __name__ == '__main__':
-     app.run(debug=True,host='0.0.0.0')
+    app.run(debug=True,host='0.0.0.0')
