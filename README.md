@@ -16,33 +16,13 @@ cat ~/TOKEN.txt | docker login https://docker.pkg.github.com -u USERNAME --passw
 Pull the image : 
 
 ```sh
-docker pull docker.pkg.github.com/c-drault/sentiment-analysis/sentiment-analysis:1.0
+docker pull docker.pkg.github.com/c-drault/sentiment-analysis/sentiment-analysis:latest
 ```
 
 And then, run a container :
 
 ```bash
-docker run -p 5000:5000 -d docker.pkg.github.com/c-drault/sentiment-analysis/sentiment-analysis:1.0
-```
-
-Access to `localhost:5000` on your browser.
-
-### Image from DockerHub 🐳
-- First connect to DockerHub
-```bash
-docker login --username=yourhubusername --email=youremail@company.com
-```
-
-Pull the image : 
-
-```sh
-docker pull cdrault/sentiment-analysis:1.0
-```
-
-And then, run a container :
-
-```bash
-docker run -p 5000:5000 -d cdrault/sentiment-analysis:1.0
+docker run -p 5000:5000 -d docker.pkg.github.com/c-drault/sentiment-analysis/sentiment-analysis:latest
 ```
 
 Access to `localhost:5000` on your browser.
